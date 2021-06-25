@@ -1,0 +1,80 @@
+:root {
+    /* Color */
+    --white-color: #fff;
+    --black-color: #140a00;
+    --black-light-color: #1a1919;
+    --grey-color: #424242;
+    --pink-color: #f8bbd0;
+
+    /* Size */
+    --padding: 12px;
+    --profile-size: 36px;
+    
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+button, button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: var(--white-color);
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .metadata {
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+
+}
+header .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 var(--padding);
+}
+
+header .info .name {
+    font-size: var(--font-large);
+    color: var(--grey-color);
+    font-weight: 600;
+}
+
+header .info .subname {
+    font-size: var(--font-small);
+    color: var(--black-light-color);
+    font-weight: 500;
+}
+header .metadata img {
+    width: var(--profile-size);
+    height: var(--profile-size);
+    border-radius: 50%;
+}
+
+header .menu {
+    display: flex;
+    margin: 0 var(--padding);   
+}
+
+header .menu img {
+    width: 40%;
+    height: 40%;
+}
